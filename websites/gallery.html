@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1">
+        <title>Gallery</title>
+        <!--Slipe css cdn-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <!-- custom css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="splide">
+            <div class=" splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-1.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-2.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-3.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-4.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-5.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-6.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-7.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-8.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-9.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-10.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-11.jpeg">
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="img_box">
+                            <img src="images/slide-12.jpeg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- splide js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script type="text/javascript">
+            var splide = new Splide( '.splide', {
+  perPage: 3,
+  type:'loop',
+  breakpoints: {
+    640: {
+      perPage: 2,
+      gap    : '.7rem',
+    },
+    480: {
+      perPage: 1,
+      gap    : '.7rem',  
+    },
+  },
+} );
+
+splide.mount();
+</script>
+</body>
+</html>
